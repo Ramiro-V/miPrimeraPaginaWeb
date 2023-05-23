@@ -1,0 +1,155 @@
+
+
+
+body {
+    background-color: lightblue;
+    color: rgb(21, 18, 71);
+    margin: 0;
+}
+
+.container-nav {
+    display: flex;
+    font-family: arial, sans-serif;
+    font-weight: bold;
+    padding: 10px;
+    height: 50px;
+    background-color: rgb(21, 18, 71);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+}
+li>a{
+padding: 8px 24px;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    
+    color: white;
+    text-decoration: none;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+
+.button-menu-toggle {
+    display: none;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+
+}
+
+.row {
+
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px 10px 10px 10px;
+
+}
+
+.column {
+    flex: 1;
+    padding: 10px 10px 10px 10px;
+    margin: 10px 10px 10px 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+h1 {
+    font-family: arial, sans-serif;
+    font-size: 36px;
+    text-align: center;
+
+}
+
+p {
+    font-family: Georgia, serif;
+    font-size: 18px;
+    color: black;
+    padding: 10px;
+    margin: 20px;
+}
+
+#button{
+    display: flex;
+    color: white;
+        background-color: rgb(107, 109, 230);
+        border-color: white;
+        border-radius: 50px;
+        padding: 0 24px;
+        font-family: monospace;
+        font-weight: bold;
+        font-size: 20px;
+
+}
+
+.myform {
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+footer {
+    padding: 10px 10px 50px 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+
+@media (max-width: 768px) {
+    .column {
+        flex: 100%;
+    }
+
+
+    .nav-links {
+        display: none;
+    }
+
+
+    .button-menu-toggle {
+        display: block;
+        color: white;
+        background-color: rgb(21, 18, 71);
+        border-color: white;
+        border-radius: 50px;
+        padding: 0 24px;
+        font-family: monospace;
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    .nav-links.nav-links-responsive {
+        position: absolute;
+        display: flex;
+        background-color: rgba(20, 20, 20, 0.95);
+        width: 50%;
+        height: 50%;
+        top: 30px;
+        left: 45%;
+        flex-direction: column;
+        padding-top: 200px;
+        align-items: center;
+        gap: 70px;
+        font-size: 40px;
+    }
+}
